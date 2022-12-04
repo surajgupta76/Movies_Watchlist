@@ -16,19 +16,19 @@ public class Movie {
     public String getname(){
         return name;
     }
-    public void setname(){
+    public void setname(String name){
         this.name = name;
     }
     public int getdurinmin(){
         return durinmin;
     }
-    public void setdurinmin(){
+    public void setdurinmin(int durinmin){
         this.durinmin = durinmin;
     }
     public double getimdbrating(){
         return imdbrating;
     }
-    public void setimdbrating(){
+    public void setimdbrating(double imdbrating){
         this.imdbrating = imdbrating;
     }
 

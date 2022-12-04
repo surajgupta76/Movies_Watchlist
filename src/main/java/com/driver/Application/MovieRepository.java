@@ -22,10 +22,13 @@ public class MovieRepository {
     }
     public void storemoviedirectorpair(String mv, String dr) {
         if(movies.containsKey(mv) && directormap.containsKey(dr)){
+            movies.put(mv,movies.get(mv));
+            directormap.put(dr,directormap.get(dr));
             List<String> selectedmovies = new ArrayList<>();
             if(moviedirectormap.containsKey(dr)){
-                selectedmovies.add(mv);
+                selectedmovies = moviedirectormap.get(dr);
             }
+            selectedmovies.add(mv);
             moviedirectormap.put(dr,selectedmovies);
         }
     }

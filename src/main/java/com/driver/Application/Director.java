@@ -16,19 +16,19 @@ public class Director{
     public String getname(){
         return name;
     }
-    public void setname(){
+    public void setname(String name){
         this.name = name;
     }
     public int getnomovies(){
         return nomovies;
     }
-    public void setnomovies(){
+    public void setnomovies(int nomovies){
         this.nomovies = nomovies;
     }
     public double getrating(){
         return imdbrating;
     }
-    public void setsetrating(){
+    public void setrating(double imdbrating){
         this.imdbrating = imdbrating;
     }
 
